@@ -38,6 +38,7 @@ body {
   display: flex;
   justify-content: flex-start;
   align-items: center;
+  padding-top: 20px;
   .account-image {
     margin-right: 20px;
   }
@@ -63,8 +64,21 @@ body {
 
 @media screen and (max-width: 500px) {
   .container {
+    transform: translate(0%, 15%);
     flex-direction: column;
-    height: 600px;
-    width: 400px;
+    height: 675px;
+    width: 325px;
+    .textbox p {
+      line-height: 1.6;
+    }
+  }
+  .account-info {
+    padding-bottom: 20px;
+    .account-textbox {
+      padding-top: 15px;
+    }
+    .share-icon {
+      margin-left: 75px;
+    }
   }
 }
