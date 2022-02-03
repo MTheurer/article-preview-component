@@ -1,0 +1,86 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@500;700&display=swap");
+body {
+  background-color: #ecf2f8;
+}
+
+.container {
+  background-color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  overflow: hidden;
+  -webkit-transform: translate(0%, 100%);
+          transform: translate(0%, 100%);
+  margin: auto;
+  height: 300px;
+  width: 800px;
+  border-radius: 15px;
+  font-family: "Manrope", sans-serif;
+}
+
+.container .image img {
+  height: 300px;
+}
+
+.container .textbox {
+  padding: 25px;
+}
+
+.container .textbox h1 {
+  font-size: 20px;
+  color: #48556a;
+}
+
+.container .textbox p {
+  font-size: 13px;
+  color: #6d7f97;
+}
+
+.account-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.account-info .account-image {
+  margin-right: 20px;
+}
+
+.account-info .account-image img {
+  height: 40px;
+  border-radius: 25px;
+}
+
+.account-info .account-textbox {
+  line-height: 0.6;
+}
+
+.account-info .account-textbox h1 {
+  font-size: 13px;
+}
+
+.account-info .account-textbox p {
+  color: #9eafc2;
+}
+
+.account-info .share-icon {
+  margin-left: 150px;
+}
+
+@media screen and (max-width: 500px) {
+  .container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: 600px;
+    width: 400px;
+  }
+}
+/*# sourceMappingURL=style.css.map */

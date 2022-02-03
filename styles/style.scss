@@ -1,0 +1,70 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@500;700&display=swap");
+
+$dk-gray-blue: hsl(217, 19%, 35%);
+$dk-blue: hsl(214, 17%, 51%);
+$gray-blue: hsl(212, 23%, 69%);
+$lt-gray-blue: hsl(210, 46%, 95%);
+
+body {
+  background-color: $lt-gray-blue;
+}
+.container {
+  background-color: white;
+  display: flex;
+  overflow: hidden;
+  transform: translate(0%, 100%);
+  margin: auto;
+  height: 300px;
+  width: 800px;
+  border-radius: 15px;
+  font-family: "Manrope", sans-serif;
+  .image img {
+    height: 300px;
+  }
+  .textbox {
+    padding: 25px;
+  }
+  .textbox h1 {
+    font-size: 20px;
+    color: $dk-gray-blue;
+  }
+  .textbox p {
+    font-size: 13px;
+    color: $dk-blue;
+  }
+}
+
+.account-info {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  .account-image {
+    margin-right: 20px;
+  }
+  .account-image img {
+    height: 40px;
+    border-radius: 25px;
+  }
+  .account-textbox {
+    line-height: 0.6;
+  }
+  .account-textbox h1 {
+    font-size: 13px;
+  }
+  .account-textbox p {
+    color: $gray-blue;
+  }
+  .share-icon {
+    margin-left: 150px;
+  }
+  .share-icon img {
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .container {
+    flex-direction: column;
+    height: 600px;
+    width: 400px;
+  }
+}
