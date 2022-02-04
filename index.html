@@ -13,7 +13,7 @@
     />
     <link rel="stylesheet" href="styles/style.css" />
     <title>Frontend Mentor | Article preview component</title>
-
+    <script src="script.js"></script>
     <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
     <style>
       .attribution {
@@ -40,6 +40,20 @@
           felt slightly bare and uninviting. I’ve got some simple tips to help
           you make any room feel complete.
         </p>
+        <div class="popup-wrapper" id="socialPopup">
+          <span class="popup" id="socialContent">
+            <p>S H A R E</p>
+            <div class="facebook">
+              <img src="/images/icon-facebook.svg" alt="facebook icon" />
+            </div>
+            <div class="twitter">
+              <img src="/images/icon-twitter.svg" alt="twitter icon" />
+            </div>
+            <div class="pinterest">
+              <img src="/images/icon-pinterest.svg" alt="pinterest icon" />
+            </div>
+          </span>
+        </div>
         <div class="account-info">
           <div class="account-image">
             <img src="/images/avatar-michelle.jpg" alt="account avatar" />
@@ -48,9 +62,9 @@
             <h1>Michelle Appleton</h1>
             <p>28 Jun 2020</p>
           </div>
-          <div class="share-icon">
+          <button class="share-icon" onclick="showFunction()">
             <img src="/images/icon-share.svg" alt="share icon" />
-          </div>
+          </button>
         </div>
       </div>
     </div>

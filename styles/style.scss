@@ -11,7 +11,6 @@ body {
 .container {
   background-color: white;
   display: flex;
-  overflow: hidden;
   transform: translate(0%, 100%);
   margin: auto;
   height: 300px;
@@ -23,6 +22,7 @@ body {
   }
   .textbox {
     padding: 25px;
+    width: 350px;
   }
   .textbox h1 {
     font-size: 20px;
@@ -34,6 +34,35 @@ body {
   }
 }
 
+.popup-wrapper {
+  position: absolute;
+  visibility: hidden;
+  height: 55px;
+  width: 275px;
+  background-color: $dk-gray-blue;
+  transform: translate(176px, -50px);
+  border-radius: 10px;
+  .popup {
+    margin-top: 8px;
+    margin-left: 20px;
+    margin-right: 20px;
+    display: flex;
+    justify-content: space-evenly;
+    align-content: center;
+    align-items: center;
+  }
+}
+
+.popup-wrapper::after {
+  content: "";
+  width: 20px;
+  height: 20px;
+  transform: rotate(-45deg);
+  background: $dk-gray-blue;
+  position: absolute;
+  bottom: -10px;
+  left: calc(50% - 10px);
+}
 .account-info {
   display: flex;
   justify-content: flex-start;
@@ -56,20 +85,38 @@ body {
     color: $gray-blue;
   }
   .share-icon {
-    margin-left: 150px;
+    cursor: pointer;
+    margin-left: 125px;
+    background-color: $lt-gray-blue;
+    border: hidden;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
   }
-  .share-icon img {
+  .share-icon img:hover {
+    background-color: white;
+  }
+  button:hover {
+    background-color: $dk-gray-blue;
   }
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 700px) {
   .container {
-    transform: translate(0%, 15%);
+    transform: translate(3%, 15%);
     flex-direction: column;
-    height: 675px;
-    width: 325px;
+    height: 650px;
+    width: 375px;
+    .textbox {
+      width: 325px;
+    }
     .textbox p {
       line-height: 1.6;
+    }
+    .image img {
+      width: 375px;
+      border-top-left-radius: 15px;
+      border-top-right-radius: 15px;
     }
   }
   .account-info {
@@ -78,7 +125,7 @@ body {
       padding-top: 15px;
     }
     .share-icon {
-      margin-left: 75px;
+      margin-left: 90px;
     }
   }
 }
