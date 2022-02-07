@@ -160,6 +160,7 @@ body {
     width: 375px;
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
+    border-bottom-left-radius: 0px;
   }
   .container .attribution {
     padding-top: 45px;
