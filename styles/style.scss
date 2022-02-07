@@ -32,6 +32,9 @@ body {
     font-size: 13px;
     color: $dk-blue;
   }
+  .attribution {
+    padding-top: 30px;
+  }
 }
 
 .popup-wrapper {
@@ -40,7 +43,7 @@ body {
   height: 55px;
   width: 275px;
   background-color: $dk-gray-blue;
-  transform: translate(176px, -50px);
+  transform: translate(189px, -50px);
   border-radius: 10px;
   .popup {
     margin-top: 8px;
@@ -81,6 +84,7 @@ body {
   }
   .account-textbox {
     line-height: 0.6;
+    width: 127px;
   }
   .account-textbox h1 {
     font-size: 13px;
@@ -142,7 +146,9 @@ body {
       margin-left: 90px;
     }
   }
-
+  .attribution {
+    padding-top: 20px;
+  }
   .account-info-clicked {
     background-color: hsl(217, 19%, 35%);
     .account-image {
@@ -161,7 +167,7 @@ body {
         display: flex;
         margin-left: 25px;
         align-items: center;
-        width: 175px;
+        width: 187px;
         justify-content: space-around;
       }
     }

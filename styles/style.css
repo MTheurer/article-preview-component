@@ -36,14 +36,18 @@ body {
   color: #6d7f97;
 }
 
+.container .attribution {
+  padding-top: 30px;
+}
+
 .popup-wrapper {
   position: absolute;
   display: none;
   height: 55px;
   width: 275px;
   background-color: #48556a;
-  -webkit-transform: translate(176px, -50px);
-          transform: translate(176px, -50px);
+  -webkit-transform: translate(189px, -50px);
+          transform: translate(189px, -50px);
   border-radius: 10px;
 }
 
@@ -104,6 +108,7 @@ body {
 
 .account-info .account-textbox {
   line-height: 0.6;
+  width: 127px;
 }
 
 .account-info .account-textbox h1 {
@@ -173,6 +178,9 @@ body {
   .account-info .share-icon {
     margin-left: 90px;
   }
+  .attribution {
+    padding-top: 20px;
+  }
   .account-info-clicked {
     background-color: #48556a;
   }
@@ -196,7 +204,7 @@ body {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    width: 175px;
+    width: 187px;
     -ms-flex-pack: distribute;
         justify-content: space-around;
   }
