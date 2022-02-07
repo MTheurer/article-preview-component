@@ -193,7 +193,10 @@ body {
   .account-info-clicked .account-textbox {
     display: none;
   }
-  .account-info-clicked .share-icon {
+  .account-info-clicked .share-icon img:hover {
+    color: white;
+  }
+  .account-info-clicked button:hover {
     background-color: #9eafc2;
   }
   .account-info-clicked .social-icons-container {

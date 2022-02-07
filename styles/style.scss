@@ -160,7 +160,10 @@ body {
     .account-textbox {
       display: none;
     }
-    .share-icon {
+    .share-icon img:hover {
+      color: white;
+    }
+    button:hover {
       background-color: $gray-blue;
     }
     .social-icons-container {
