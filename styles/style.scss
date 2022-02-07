@@ -151,11 +151,18 @@ body {
     .account-textbox {
       display: none;
     }
+    .share-icon {
+      background-color: $gray-blue;
+    }
     .social-icons-container {
       display: block;
 
       .social-icons {
         display: flex;
+        margin-left: 25px;
+        align-items: center;
+        width: 175px;
+        justify-content: space-around;
       }
     }
   }
