@@ -159,6 +159,9 @@ body {
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
   }
+  .container .attribution {
+    padding-top: 45px;
+  }
   .account-info {
     padding-top: 20px;
     padding-bottom: 20px;
@@ -177,9 +180,6 @@ body {
   }
   .account-info .share-icon {
     margin-left: 90px;
-  }
-  .attribution {
-    padding-top: 20px;
   }
   .account-info-clicked {
     background-color: #48556a;
