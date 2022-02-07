@@ -19,6 +19,8 @@ body {
   font-family: "Manrope", sans-serif;
   .image img {
     height: 300px;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
   }
   .textbox {
     padding: 25px;
