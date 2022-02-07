@@ -38,7 +38,7 @@ body {
 
 .popup-wrapper {
   position: absolute;
-  visibility: hidden;
+  display: none;
   height: 55px;
   width: 275px;
   background-color: #48556a;
@@ -89,6 +89,10 @@ body {
   padding-top: 20px;
 }
 
+.account-info .social-icons-container {
+  display: none;
+}
+
 .account-info .account-image {
   margin-right: 20px;
 }
@@ -121,7 +125,7 @@ body {
 }
 
 .account-info .share-icon img:hover {
-  background-color: white;
+  color: white;
 }
 
 .account-info button:hover {
@@ -151,13 +155,40 @@ body {
     border-top-right-radius: 15px;
   }
   .account-info {
+    padding-top: 20px;
     padding-bottom: 20px;
+    width: 375px;
+    -webkit-transform: translate(-25px, 42px);
+            transform: translate(-25px, 42px);
+    border-bottom-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+    height: 32px;
+  }
+  .account-info .account-image {
+    padding-left: 25px;
   }
   .account-info .account-textbox {
     padding-top: 15px;
   }
   .account-info .share-icon {
     margin-left: 90px;
+  }
+  .account-info-clicked {
+    background-color: #48556a;
+  }
+  .account-info-clicked .account-image {
+    display: none;
+  }
+  .account-info-clicked .account-textbox {
+    display: none;
+  }
+  .account-info-clicked .social-icons-container {
+    display: block;
+  }
+  .account-info-clicked .social-icons-container .social-icons {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
   }
 }
 /*# sourceMappingURL=style.css.map */
